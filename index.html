@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;600&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="info">
+        <div class="infoSub">
+          <img src="images/image-jeremy.png" alt="personal" class="self" />
+          <div>
+            <p>Report for</p>
+            <h1>Jeremy Robson</h1>
+          </div>
+        </div>
+
+        <div class="time">
+          <div><h2 id="daily">Daily</h2></div>
+          <div><h2 id="weekly">Weekly</h2></div>
+          <div><h2 id="monthly">Monthly</h2></div>
+        </div>
+      </div>
+
+      <div class="work" id="0">
+        <div class="sub">
+          <div class="nav">
+            <h3>Work</h3>
+            <img src="images/icon-ellipsis.svg" alt="nav" class="dots" />
+          </div>
+          <div class="daily">
+            <div><h4>5hrs</h4></div>
+            <!-- daily -->
+            <div>
+              <p>Last Day - <span>7hrs</span></p>
+            </div>
+            <!-- daily -->
+          </div>
+        </div>
+      </div>
+
+      <div class="play" id="1">
+        <div class="sub">
+          <div class="nav">
+            <h3>Play</h3>
+            <img src="images/icon-ellipsis.svg" alt="nav" class="dots" />
+          </div>
+          <div class="daily">
+            <div><h4>1hr</h4></div>
+            <!-- daily -->
+            <div>
+              <p>Last Day - <span>2hrs</span></p>
+            </div>
+            <!-- daily -->
+          </div>
+        </div>
+      </div>
+
+      <div class="study" id="2">
+        <div class="sub">
+          <div class="nav">
+            <h3>Study</h3>
+            <img src="images/icon-ellipsis.svg" alt="nav" class="dots" />
+          </div>
+          <div class="daily">
+            <div><h4>0hrs</h4></div>
+            <!-- daily -->
+            <div>
+              <p>Last Day - <span>1hr</span></p>
+            </div>
+            <!-- daily -->
+          </div>
+        </div>
+      </div>
+
+      <div class="exercise" id="3">
+        <div class="sub">
+          <div class="nav">
+            <h3>Exercise</h3>
+            <img src="images/icon-ellipsis.svg" alt="nav" class="dots" />
+          </div>
+          <div class="daily">
+            <div><h4>1hr</h4></div>
+            <!-- daily -->
+            <div>
+              <p>Last Day - <span>1hr</span></p>
+            </div>
+            <!-- daily -->
+          </div>
+        </div>
+      </div>
+
+      <div class="social" id="4">
+        <div class="sub">
+          <div class="nav">
+            <h3>Social</h3>
+            <img src="images/icon-ellipsis.svg" alt="nav" class="dots" />
+          </div>
+          <div class="daily">
+            <div><h4>1hr</h4></div>
+            <!-- daily -->
+            <div>
+              <p>Last Day - <span>3hrs</span></p>
+            </div>
+            <!-- daily -->
+          </div>
+        </div>
+      </div>
+
+      <div class="selfCare" id="5">
+        <div class="sub">
+          <div class="nav">
+            <h3>Self Care</h3>
+            <img src="images/icon-ellipsis.svg" alt="nav" class="dots" />
+          </div>
+          <div class="daily">
+            <div><h4>0hrs</h4></div>
+            <!-- daily -->
+            <div>
+              <p>Last Day - <span>1hr</span></p>
+            </div>
+            <!-- daily -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

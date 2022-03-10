@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Rubik";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: hsl(226, 43%, 10%);
+  margin: 0;
+}
+main {
+  width: 70vw;
+  display: grid;
+  gap: 1.3em;
+  grid-template-areas:
+    "item1 item2 item3 item4"
+    "item1 item5 item6 item7";
+}
+.self {
+  width: 50px;
+  margin-bottom: 2em;
+  border: 2px solid white;
+  border-radius: 999em;
+  padding: 0;
+}
+p {
+  font-size: 12px;
+}
+h1 {
+  font-weight: 300;
+  color: white;
+  margin-right: 1.2em;
+  margin-bottom: 1em;
+}
+h2 {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 1em;
+  color: hsl(235, 45%, 61%);
+  cursor: pointer;
+}
+h2:hover {
+  color: white;
+  transition: 0.6s;
+}
+h3 {
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+}
+h4 {
+  font-size: 30px;
+  font-weight: 300;
+  color: white;
+}
+div {
+  border-radius: 0.5em;
+}
+.info {
+  grid-area: item1;
+  background: hsl(235, 46%, 20%);
+}
+.infoSub {
+  padding: 1.2em;
+  background: hsl(246, 80%, 60%);
+}
+.time {
+  margin: 1em;
+}
+.work {
+  border-radius: 0.5em 0.5em 1em 1em;
+  display: flex;
+  align-items: flex-end;
+  grid-area: item2;
+  background: hsl(15, 100%, 70%);
+  background-image: url("images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: right 5% top -3%;
+  background-size: 40%;
+  width: 150px;
+}
+.play {
+  border-radius: 0.5em 0.5em 1em 1em;
+  display: flex;
+  align-items: flex-end;
+  grid-area: item3;
+  background: hsl(195, 74%, 62%);
+  background-image: url("images/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: right 5% top -3%;
+  background-size: 40%;
+  width: 150px;
+}
+.study {
+  border-radius: 0.5em 0.5em 1em 1em;
+  display: flex;
+  align-items: flex-end;
+  grid-area: item4;
+  background: hsl(348, 100%, 68%);
+  background-image: url("images/icon-study.svg");
+  background-repeat: no-repeat;
+  background-position: right 5% top -3%;
+  background-size: 40%;
+  width: 150px;
+}
+.exercise {
+  border-radius: 0.5em 0.5em 1em 1em;
+  display: flex;
+  align-items: flex-end;
+  grid-area: item5;
+  background: hsl(145, 58%, 55%);
+  background-image: url("images/icon-exercise.svg");
+  background-repeat: no-repeat;
+  background-position: right 5% top -3%;
+  background-size: 40%;
+  width: 150px;
+}
+.social {
+  border-radius: 0.5em 0.5em 1em 1em;
+  display: flex;
+  align-items: flex-end;
+  grid-area: item6;
+  background: hsl(264, 64%, 52%);
+  background-image: url("images/icon-social.svg");
+  background-repeat: no-repeat;
+  background-position: right 5% top -3%;
+  background-size: 40%;
+  width: 150px;
+}
+.selfCare {
+  border-radius: 0.5em 0.5em 1em 1em;
+  display: flex;
+  align-items: flex-end;
+  grid-area: item7;
+  background: hsl(43, 84%, 65%);
+  background-image: url("images/icon-self-care.svg");
+  background-repeat: no-repeat;
+  background-position: right 5% top -3%;
+  background-size: 40%;
+  width: 150px;
+}
+.sub {
+  background: hsl(235, 46%, 20%);
+  padding: 1.2em;
+  width: 100%;
+}
+.sub:hover {
+  background: hsl(235, 45%, 61%);
+  transition: 0.3s;
+}
+.daily {
+  display: block;
+}
+.weekly {
+  display: none;
+}
+.monthly {
+  display: none;
+}
+.daily p {
+  margin-top: 1em;
+}
+.weekly p {
+  margin-top: 1em;
+}
+.monthly p {
+  margin-top: 1em;
+}
+p {
+  color: hsl(236, 100%, 87%);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.7em;
+}
+.dots {
+  width: 12px;
+  height: 3px;
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+  .infoSub {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .self {
+    margin: 0;
+  }
+  h1 {
+    font-size: 22px;
+    margin: 0;
+    margin-right: 1em;
+  }
+  h2 {
+    margin: 0;
+    font-size: 14px;
+  }
+  .time {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .work {
+    padding-top: 2em;
+    width: auto;
+  }
+  .play {
+    padding-top: 2em;
+    width: auto;
+  }
+  .study {
+    padding-top: 2em;
+    width: auto;
+  }
+  .exercise {
+    padding-top: 2em;
+    width: auto;
+  }
+  .social {
+    padding-top: 2em;
+    width: auto;
+  }
+  .selfCare {
+    padding-top: 2em;
+    width: auto;
+  }
+
+  .daily {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+  .weekly {
+    display: flex;
+    justify-content: space-between;
+    display: none;
+  }
+  .monthly {
+    display: flex;
+    justify-content: space-between;
+    display: none;
+  }
+}
